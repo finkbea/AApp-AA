@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@color/lightBlue"
+    android:orientation="vertical"
+
+    >
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="100sp"
+        android:background="#8E9196"
+        android:gravity="center_vertical"
+        android:text="@string/aapp_into_survey"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20sp"
+        android:paddingBottom="50sp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:ellipsize="end"
+        android:text="@string/question"
+
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:visibility="visible"
+        android:enabled="true"
+        android:text="@string/button1" />
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:enabled="true"
+        android:onClick="onClick"
+        android:text="@string/button2" />
+
+    <Button
+        android:id="@+id/btn_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:enabled="true"
+        android:onClick="onClick"
+        android:text="@string/button3" />
+
+    <Button
+        android:id="@+id/btn_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:enabled="true"
+        android:onClick="onClick"
+        android:layout_marginBottom="30dp"
+        android:text="@string/button4" />
+
+
+    <EditText
+        android:id="@+id/UserInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/other"
+        android:text="@string/Other"
+        android:autofillHints="no"
+        android:inputType="text" />
+
+
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:onClick="onClick"
+        android:text="@string/submitButton" />
+
+
+</LinearLayout>

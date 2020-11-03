@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/lightBlue">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Title"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hs" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="110dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/darkGrey" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/grey"
+                android:onClick="launchCalendar"
+                android:text="@string/calendar" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/lightGrey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="110dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:layout_editor_absoluteX="110dp">
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/darkGrey"
+                android:onClick="launchMotivational"
+                android:text="@string/motivation" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/grey" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/lightGrey"
+                android:onClick="launchAccountabilityBuddy"
+                android:text="@string/accountability_buddy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="110dp"
+            android:layout_height="330dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <Button
+                android:id="@+id/button31"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/darkGrey" />
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/grey"
+                android:onClick="launchSocial"
+                android:text="@string/social" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:backgroundTint="@color/lightGrey" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightBlue"
+        android:onClick="launchSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:srcCompat="@drawable/gear" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

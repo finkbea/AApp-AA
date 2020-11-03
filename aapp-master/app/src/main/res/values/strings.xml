@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AApp</string>
+    <string name="motivation">Feeling down?</string>
+    <string name="calendar">Calendar</string>
+    <string name="accountability_buddy">Accountability Buddy</string>
+    <string name="social">Resources</string>
+    <string name="motivationalActivityName">Motivational Activity</string>
+    <string name="calendarName">Calendar</string>
+    <string name="socialName">Social</string>
+    <string name="accountabilityBuddyName">Accountability Buddy</string>
+    <string name="settingsName">Settings</string>
+    <string name="question">Question</string>
+    <string name="button1">Button1</string>
+    <string name="button2">Button2</string>
+    <string name="button3">Button3</string>
+    <string name="button4">Button4</string>
+    <string name="Other"></string>
+    <string name="other">Custom Answer</string>
+    <string name="aapp_into_survey">AApp Into Survey</string>
+    <string name="submitButton">Submit</string>
+    <string name="surveyActivity">surveyActivity</string>
+    <string name="mainActivity">MainActivity</string>
+    <string name="survey">Survey</string>
+    <string name="save_my_date">Save My Date</string>
+    <string name="mark_your_date">mark_your_date</string>
+    <string name="really_long_string"></string>
+
+</resources>

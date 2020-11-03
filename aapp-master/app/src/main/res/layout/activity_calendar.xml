@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".calendarActivity"
+    android:background="@color/lightBlue">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:text="Calendar" />
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="25dp"
+        android:text="@string/mark_your_date"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="316dp"
+        android:layout_height="467dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+
+            android:weekSeparatorLineColor="#0f0"
+            android:selectedDateVerticalBar="@color/blueGrey"
+            android:background="@drawable/bg_calendar" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/bg_savebtn"
+            android:text="@string/save_my_date" />
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFF"
+            android:fadeScrollbars="false"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/scrollLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/really_long_string">
+
+                </TextView>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
